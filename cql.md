@@ -38,7 +38,7 @@ const language = 'typescript';
 |`pbiorole`           |               |        |
 |`ftype`               |               |        |
 |`source`              |               |        |
-|`number_participants` |               |        |
+|`number_participants` |               | [number_participants:3](https://complex-portal.github.io/complex-portal-view/complex/search?query=number_participants:3) |
 
 
 ### Lists
