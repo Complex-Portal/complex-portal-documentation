@@ -1,6 +1,5 @@
 ## Complex Query Language
 
----
 
 ### Syntax highlight
 ```typescript
