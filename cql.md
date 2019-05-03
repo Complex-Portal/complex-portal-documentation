@@ -1,4 +1,4 @@
- ## Markdown __rulez__!
+## Markdown __rulez__!
 ---
 
 ### Syntax highlight
@@ -9,8 +9,8 @@ const language = 'typescript';
 ### Lists
 1. Ordered list
 2. Another bullet point
-- Unordered list
-- Another unordered bullet point
+  - Unordered list
+  - Another unordered bullet point
 
 ### Blockquote
 > Blockquote to the max!!!
