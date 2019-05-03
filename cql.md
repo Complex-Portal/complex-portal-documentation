@@ -16,15 +16,10 @@ Narrow your initial search result by using the filters on the results page for:
 
 ## Complex Query Language (CQL) fields
 
-### Syntax highlight
-```typescript
-const language = 'typescript';
-```
-
 |Field Name            | Searches on                    | Example  |
 |----------------------|--------------------------------|----------|
 |`complex_id`          | Complex identifier(s)          |[complex_id:CPX-2158](https://complex-portal.github.io/complex-portal-view/complex/search?query=complex_id:CPX-2158 "Search by complex ac")|
-|`complex_alias`       | Complex alias(es)              |[complex_alias:&quot;coenzyme Q-cytochrome c reductase&quot;](https://complex-portal.github.io/complex-portal-view/complex/search?query=complex_alias:&quot;coenzyme Q-cytochrome c reductase&quot;)|
+|`complex_alias`       | Complex alias(es)              |[complex_alias:"coenzyme Q-cytochrome c reductase"](https://complex-portal.github.io/complex-portal-view/complex/search?query=complex_alias:&quot;coenzyme+Q-cytochrome+c+reductase&quot;)|
 |`species`             | Complex Tax ID                 |[species:9606](https://complex-portal.github.io/complex-portal-view/complex/search?query=species:9606)|
 |`complex_xref`        | Complex xref(s)                |[complex_xref:15210332](https://complex-portal.github.io/complex-portal-view/complex/search?query=complex_xref:15210332)|
 |`udate`               | Last update of the interaction |[udate:\[20110607 TO 20120906\]](https://complex-portal.github.io/complex-portal-view/complex/search?query=udate:[20110607 TO 20120906])|
@@ -34,6 +29,6 @@ const language = 'typescript';
 |`pxref`               | Interactor xref(s)             |[pxref:GO:0031577](https://complex-portal.github.io/complex-portal-view/complex/search?query=pxref:GO:0031577)|
 |`stc`                 | Boolean value to know if the Interactor has stoichiometry information|[stc:true](https://complex-portal.github.io/complex-portal-view/complex/search?query=stc:true)|
 |`pbiorole`            | Biological role(s)             |[pbiorole:enzyme](https://complex-portal.github.io/complex-portal-view/complex/search?query=pbiorole:enzyme)|
-|`ftype`               | Feature type(s)                |[ftype:&quot;binding region&quot;](https://complex-portal.github.io/complex-portal-view/complex/search?query=ftype:&quot;binding region&quot;)|
+|`ftype`               | Feature type(s)                |[ftype:"binding region"](https://complex-portal.github.io/complex-portal-view/complex/search?query=ftype:&quot;binding region&quot;)|
 |`source`              | Source database(s)             |[source:intact](https://complex-portal.github.io/complex-portal-view/complex/search?query=source:intact)|
 |`number_participants` | Number of participants         |[number_participants:3](https://complex-portal.github.io/complex-portal-view/complex/search?query=number_participants:3)|
