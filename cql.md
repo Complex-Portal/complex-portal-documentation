@@ -1,4 +1,4 @@
-## Complex query
+## Complex Query
 
 To do a search you can use the Complex Query Language (CQL), which is based on Lucene's syntax.
 
