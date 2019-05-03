@@ -1,4 +1,5 @@
-## Complex Query Language __rulez__!
+## Complex Query Language
+
 ---
 
 ### Syntax highlight
