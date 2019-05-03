@@ -24,21 +24,22 @@ const language = 'typescript';
 ```
 
 |Field Name          | Searches on   | Example  |
-| -------------------|:-------------:|---------:|
-|complex_id          | right-aligned | [complex_id:CPX-2158](https://complex-portal.github.io/complex-portal-view/complex/search?query=complex_id:CPX-2158 "Search by complex ac")|
-|complex_alias       | centered      |   $12  |
-|species             | are neat      |    $1  |
-|complex_xref        |               |        |
-|udate               |               |        |
-|id                  |               |        |
-|alias               |               |        |
-|ptype               |               |        |
-|pxref               |               |        |
-|stc                 |               |        |
-|pbiorole            |               |        |
-|ftype               |               |        |
-|source              |               |        |
-|number_participants |               |        |
+|--------------------|---------------|----------|
+|`complex_id`          | right-aligned | [complex_id:CPX-2158](https://complex-portal.github.io/complex-portal-view/complex/search?query=complex_id:CPX-2158 "Search by complex ac")|
+|`complex_alias`       | centered      |   $12  |
+|`species`             | are neat      |    $1  |
+|`complex_xref`        |               |        |
+|`udate`               |               |        |
+|`id`                  |               |        |
+|`alias`               |               |        |
+|`ptype`               |               |        |
+|`pxref`               |               |        |
+|`stc`                |               |        |
+|`pbiorole`           |               |        |
+|`ftype`               |               |        |
+|`source`              |               |        |
+|`number_participants` |               |        |
+
 
 ### Lists
 1. Ordered list
