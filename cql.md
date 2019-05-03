@@ -1,4 +1,4 @@
-## Markdown __rulez__!
+## Complex Query Language __rulez__!
 ---
 
 ### Syntax highlight
