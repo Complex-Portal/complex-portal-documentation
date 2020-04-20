@@ -18,7 +18,17 @@ A stable set of (two or more) interacting macromolecules such as proteins which 
 - Homologous proteins, with the same functionality, which would be inferred based on homology of the genome-encoded components made primarily on functional conservation between the two systems to form a complex but for which no physical link has been demonstrated, e.g. proteins A and B have been shown to physically interact and form a functional complex, protein C is a homologue of protein B by sequence similarity and is know to have the same function as B but protein A-C interaction has not been demonstrated experimentally (e.g. SUMO - E1 ligase complexes: there is interaction evidence for binding with SUMO1 ([CPX-3042](https://www.ebi.ac.uk/complexportal/complex/CPX-3042)) but not with SUMO2 ([CPX-3044](https://www.ebi.ac.uk/complexportal/complex/CPX-3044))). These complexes are tagged with [ECO:0005546 biological system reconstruction evidence based on paralogy evidence used in manual assertion](https://www.ebi.ac.uk/ols/ontologies/eco/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FECO_0005546).
 - Complexes that lack full experimental evidence but are commonly regarded as existing, e.g. transmembrane receptors (e.g [CPX-2159 GABA receptors](https://www.ebi.ac.uk/complexportal/complex/CPX-2159)) for which only pharmacological evidence exists. These complexes are tagged with [ECO:0005547 biological system reconstruction evidence based on inference from background scientific knowledge used in manual assertion](https://www.ebi.ac.uk/ols/ontologies/eco/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FECO_0005547).
 
+### Species
 
+#### Multicellular organisms
+
+We curate to species level (e.g. *[Homo sapiens](https://www.uniprot.org/taxonomy/9606)*, *[Mus musculus](https://www.uniprot.org/taxonomy/10090)*, *[Caenorhabditis elegans](https://www.uniprot.org/taxonomy/6239)*).  
+
+#### Micro-organisms
+
+We curate to the model organism strain (e.g. [*Saccharomyces cerevisiae* (strain ATCC 204508 / S288c)](https://www.uniprot.org/taxonomy/559292), [*Escherichia coli* (strain K12)](https://www.uniprot.org/taxonomy/83333)).
+
+In cases where a strain is not a model organisms but is of specific scientific interest we curate the complexes in the  species taxon and in the strain where the experimental evidence exists for the strain (e.g. [Human SARS coronavirus (SARS-CoV) species](https://www.uniprot.org/taxonomy/694009) and [SARS-CoV-2 strain](https://www.uniprot.org/taxonomy/2697049)).
 
 ### Complex Nomenclature
 
@@ -111,19 +121,35 @@ The following ECO codes will be used to indicate the strength of evidence that a
 
 
 
-|Field Name            | Searches on                    | Example  |
-|----------------------|--------------------------------|----------|
-|`complex_id`          | Complex identifier(s)          |[complex_id:CPX-2158](https://www.ebi.ac.uk/complexportal/complex/search?query=complex_id:CPX-2158 "Search by complex ac")|
-|`complex_alias`       | Complex alias(es)              |[complex_alias:"coenzyme Q-cytochrome c reductase"](https://www.ebi.ac.uk/complexportal/complex/search?query=complex_alias:&quot;coenzyme+Q-cytochrome+c+reductase&quot;)|
-|`species`             | Complex Tax ID                 |[species:9606](https://www.ebi.ac.uk/complexportal/complex/search?query=species:9606)|
-|`complex_xref`        | Complex xref(s)                |[complex_xref:15210332](https://www.ebi.ac.uk/complexportal/complex/search?query=complex_xref:15210332)|
-|`udate`               | Last update of the interaction |[udate:\[20110607 TO 20120906\]](https://www.ebi.ac.uk/complexportal/complex/search?query=udate:[20110607+TO+20120906])|
-|`id`                  | Interactor identifier(s)       |[id:P38326](https://www.ebi.ac.uk/complexportal/complex/search?query=id:P38326)|
-|`alias`               | Interactor alias(es)           |[alias:Cyclin](https://www.ebi.ac.uk/complexportal/complex/search?query=alias:Cyclin)|
-|`ptype`               | Interactor type(s)             |[ptype:protein](https://www.ebi.ac.uk/complexportal/complex/search?query=ptype:protein)|
-|`pxref`               | Interactor xref(s)             |[pxref:GO:0031577](https://www.ebi.ac.uk/complexportal/complex/search?query=pxref:GO:0031577)|
-|`stc`                 | Boolean value to know if the Interactor has stoichiometry information|[stc:true](https://www.ebi.ac.uk/complexportal/complex/search?query=stc:true)|
-|`pbiorole`            | Biological role(s)             |[pbiorole:enzyme](https://www.ebi.ac.uk/complexportal/complex/search?query=pbiorole:enzyme)|
-|`ftype`               | Feature type(s)                |[ftype:"binding region"](https://www.ebi.ac.uk/complexportal/complex/search?query=ftype:&quot;binding+region&quot;)|
-|`source`              | Source database(s)             |[source:intact](https://www.ebi.ac.uk/complexportal/complex/search?query=source:intact)|
-|`number_participants` | Number of participants         |[number_participants:3](https://www.ebi.ac.uk/complexportal/complex/search?query=number_participants:3)|
+|ECO Code|Name|Description|
+|--------|----|-----------|
+|ECO:0000353|physical interaction evidence used in manual assertion|Used when experimental evidence for the complexes exists in a single experiment. The complex must be cross-referenced to experimental data in either an IMEx database, wwPDB or EMDB.|
+|ECO:0005543|biological system reconstruction evidence by experimental evidence from mixed species used in manual assertion|Used when experimental evidence for the complexes exists in a single experiment but the constructs are derived from homologous gene products in different species. The complex must be cross-referenced to experimental in either an IMEx database, wwPDB or EMDB.|
+|ECO:0005610|biological system reconstruction evidence based on homology evidence used in manual assertion|Used when experimental evidence exists for a complex in one species and it is desirable to curate a similar complex in another species for which only limited experimental evidence exists. Sequences and number of genome-encoded components are fairly conserved but some divergence may be observed. The complex with the experimental evidence must be annotated with ECO:0000353 or ECO:0005543 and has to be cross-referenced with the qualifier = "inferred-from".|
+|ECO:0005544|biological system reconstruction evidence based on orthology evidence used in manual assertion|Used when experimental evidence exists for a complex in one species (e.g. human) and it is desirable to curate the same complex in another species for which only limited experimental evidence exists (e.g. mouse). Sequences are fairly conserved but some divergence may be observed and the number of genome-encoded components is identical. The complex with the experimental evidence must be annotated with ECO:0000353 or ECO:0005543 and has to be cross-referenced with the qualifier = "inferred-from".|
+|ECO:0005546|biological system reconstruction evidence based on paralogy evidence used in manual assertion|Used when experimental evidence exists for a complex and it is desirable to curate a similar complex in the same species for which only limited experimental evidence exists. Sequences and number of genome-encoded components are fairly conserved but some divergence may be observed. The complex with the experimental evidence must be annotated with ECO:0000353 or ECO:0005543 and has to be cross-referenced with the qualifier = "inferred-from".|
+|ECO:0005547|biological system reconstruction evidence based on inference from background scientific knowledge used in manual assertion|Used when no or only partial experimental evidence exists but the complex is generally assumed to exist. Functional studies or ligand binding evidence from pharmacological experiments are often used for the reconstruction of such complexes.|
+
+#### Enzymatic activity
+
+The E.C. number linked to IntEnz will be added when an enzyme complex is described.
+
+#### Additional literature
+
+Review articles or experimental data not appropriate for entering into IntAct are added. 
+
+#### Pathway information
+
+For human complexes, crosslinks to Reactome put complexes into a pathway context. Note that the definition of a complex is different in Reactome and in many cases a one-to-many relationship exists. 
+
+#### Disease information
+
+Cross references to the Experimental Factor Ontology (EFO) or their contributing databases (e.g. Orphanet, Human Phenotype Ontology) may be added if a complex or a chain when within that complex has been linked to a specific disease condition. 
+
+#### Drug target information
+
+Cross-links to ChEMBL are used to indicate complexes which have been used as drug targets. 
+
+### Complex Variants
+
+If variant forms of a complex exist i.e. the same functional unit can exist in alternate forms with differing macromolecular composition, these are curated as separate objects. For example, PDGF can exist as a PDGF-A homodimer, PDGF-B homodimer, PDGF-AB heterodimer, PDGF-C homodimer and a PDGF-D homodimer If the variants have well-accepted names, e.g. PDGF-AB, these may be used as the primary name. If not, then the recommended name is qualified by variant 1, variant 2 e.g. TRAMP complex variant 1 (EBI-2352894).
