@@ -38,7 +38,7 @@ At the moment, each complex can only be assigned one species. In order to be abl
 
 #### Complex recommended name
 
-The most informative, well accepted name in the literature, that is intuitive to the user. Where possible, this will be the same as the equivalent component term in GO. The term should always end in the word 'complex' or homo'n'mer. The recommended name is kept consistent when a complex is conserved across a taxonomic range. 
+The most informative, well accepted name in the literature, that is intuitive to the user. Where possible, this will be the same as the equivalent component term in the [Gene Ontology](http://geneontology.org/). The term should always end in the word 'complex' or homo'n'mer. The recommended name is kept consistent when a complex is conserved across a taxonomic range. 
 
 #### Complex systematic name
 
@@ -60,7 +60,7 @@ The Shortlabel appears as "gene product name" when a Complex Portal AC is used a
 
 All proteins are derived from, and linked to, [UniProtKB](uniprot.org/) identifiers, ideally UniProtKB/Swiss-Prot. Isoform and chain designators are used when appropriate. Should one or more isoforms exist, annotation will be to the canonical protein entry unless either only one isoform is known to exist in the complex or different isoforms give the complex different properties. In the latter case, a separate entry should be made for each variation with detail given in the "Description" or "Properties" section as appropriate (see below for details on complex variants). 
 
-#### Small molecules /polysaccharides
+#### Small molecules / polysaccharides
 
 All small molecules are derived from, and linked to, [ChEBI](https://www.ebi.ac.uk/chebi/) identifiers. Small molecules are included only if they are integral to the complex or bind to the complex as part of its function, e.g. cofactors, electron donors/acceptors, such as ATP, H+. Enzyme targets are not added as participants. For example, ATP is entered as a cofactor if the enzyme function is NOT primarily an ATPase (e.g. [GyrA-GyrB DNA Gyrase complex](https://www.ebi.ac.uk/complexportal/complex/CPX-2177)) but NOT entered for ATPases where it is a substrate (e.g. [TRCF-UvrA complex](https://www.ebi.ac.uk/complexportal/complex/CPX-2155)). In the latter case the substrate is added using a [Gene Ontology](http://geneontology.org/) annotation, e.g. [ATP binding](https://www.ebi.ac.uk/QuickGO/term/GO:0005524).
 
@@ -157,3 +157,9 @@ Cross-links to [ChEMBL](https://www.ebi.ac.uk/chembl/) are used to indicate comp
 ### Complex Variants
 
 If variant forms of a complex exist i.e. the same functional unit can exist in alternate forms with differing macromolecular composition, these are curated as separate objects. For example, PDGF can exist as a PDGF-A homodimer, PDGF-B homodimer, PDGF-AB heterodimer, PDGF-C homodimer and a PDGF-D homodimer. If the variants have well-accepted names, e.g. PDGF-AB, these may be used as the primary name. If not, then the recommended name is qualified by variant 1, variant 2 e.g. [TRAMP complex variant 1](https://www.ebi.ac.uk/complexportal/complex/CPX-1678).
+
+### Versioning
+
+A version is identified by a .x suffix (where x is a number) of the accession number. The version is included in the download files but not displayed on the website.
+
+A complex receives a new version if its participants change (adding or removing one or more participants) or its function is redefined. 
