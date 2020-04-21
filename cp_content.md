@@ -20,11 +20,11 @@ A stable set of (two or more) interacting macromolecules such as proteins which 
 
 ### Species
 
-##### Multicellular organisms
+**Multicellular organisms**
 
 We curate to species level (e.g. *[Homo sapiens](https://www.uniprot.org/taxonomy/9606)*, *[Mus musculus](https://www.uniprot.org/taxonomy/10090)*, *[Caenorhabditis elegans](https://www.uniprot.org/taxonomy/6239)*).  
 
-##### Micro-organisms
+**Micro-organisms**
 
 We curate to the model organism strain (e.g. [*Saccharomyces cerevisiae* (strain ATCC 204508 / S288c)](https://www.uniprot.org/taxonomy/559292), [*Escherichia coli* (strain K12)](https://www.uniprot.org/taxonomy/83333)).
 
