@@ -16,7 +16,7 @@ A stable set of (two or more) interacting macromolecules such as proteins which 
 
 - Substrates or ligands if the enzyme or receptor complex only forms in their presence (see PDGF receptors above, e.g. CPX-2883).
 - Homologous proteins, with the same functionality, which would be inferred based on homology of the genome-encoded components made primarily on functional conservation between the two systems to form a complex but for which no physical link has been demonstrated, e.g. proteins A and B have been shown to physically interact and form a functional complex, protein C is a homologue of protein B by sequence similarity and is know to have the same function as B but protein A-C interaction has not been demonstrated experimentally (e.g. SUMO - E1 ligase complexes: there is interaction evidence for binding with SUMO1 ([CPX-3042](https://www.ebi.ac.uk/complexportal/complex/CPX-3042)) but not with SUMO2 ([CPX-3044](https://www.ebi.ac.uk/complexportal/complex/CPX-3044))). These complexes are tagged with [ECO:0005546 biological system reconstruction evidence based on paralogy evidence used in manual assertion](https://www.ebi.ac.uk/ols/ontologies/eco/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FECO_0005546).
-- Complexes that lack full experimental evidence but are commonly regarded as existing, e.g. transmembrane receptors (e.g [CPX-2159 GABA receptors](https://www.ebi.ac.uk/complexportal/complex/CPX-2159)) for which only pharmacological evidence exists. These complexes are tagged with [ECO:0005547 biological system reconstruction evidence based on inference from background scientific knowledge used in manual assertion](https://www.ebi.ac.uk/ols/ontologies/eco/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FECO_0005547).
+- Complexes which are generally assumed to exist but for which only partial experimental evidence exists (such as functional studies or ligand binding evidence from pharmacological experiments), e.g. [Muscle-type nicotinic acetylcholine receptor complex, alpha1-beta1-delta-gamma](https://www.ebi.ac.uk/complexportal/complex/CPX-2179). These complexes are tagged with [ECO:0005547 biological system reconstruction evidence based on inference from background scientific knowledge used in manual assertion](https://www.ebi.ac.uk/ols/ontologies/eco/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FECO_0005547).
 
 ### Species
 
@@ -30,6 +30,10 @@ We curate to the model organism strain (e.g. [*Saccharomyces cerevisiae* (strain
 
 In cases where a strain is not a model organisms but is of specific scientific interest we curate the complexes in the  species taxon and in the strain where the experimental evidence exists for the strain (e.g. [Human SARS coronavirus (SARS-CoV) species](https://www.uniprot.org/taxonomy/694009) and [SARS-CoV-2 strain](https://www.uniprot.org/taxonomy/2697049)).
 
+#### Host-pathogen complexes
+
+At the moment, each complex can only be assigned one species. In order to be able to combine all complexes for a given pathogen the complex is assigned the pathogen species.
+
 ### Complex Nomenclature
 
 #### Complex recommended name
@@ -38,47 +42,54 @@ The most informative, well accepted name in the literature, that is intuitive to
 
 #### Complex systematic name
 
-Derived using the Reactome rules for naming complexes. In principle this is a string of gene names of the participants of the complex separated by a colon (e.g. "fiba:fibb:fibg"). The order is determined by the order of synthesis of the complex. Where several participants join at the same time, or the order is unknown, alphanumeric order is used. Recommended gene names for each model organism will be used; therefore the systematic name may not be consistent when a complex is conserved across a taxonomic range. 
+This is a string of gene symbols of the complex participants separated by a colon (e.g. "fiba:fibb:fibg") in alphanumeric order. The order is irrestective of species in a host-pathogen complex. Recommended gene symbols for each model organism will be used; therefore the systematic name may not be consistent when a complex is conserved across a taxonomic range. 
 
 #### Complex synonym
 
 All other possible names the complex is known by or can be described as.
 
-#### Short label
+#### Shortlabel (not displayed on website, only in download files)
 
-Currently an obligate part of the data model, it may be possible to remove these once the model is updated. Currently, an appropriate designation for the complex with species indicated using the UniProt five letter code e.g. fibrinogen_human, tfiid_mouse. When the same complex is conserved across a taxonomic range, the root name is maintained across all entries e.g. fibrinogen_human, fibrinogen_mouse, fibrinogen_bovin. 
+An obligate part of the data model. An appropriate designation for the complex with species indicated using the UniProt five letter code e.g. fibrinogen_human, tfiid_mouse. When the same complex is conserved across a taxonomic range, the root name is maintained across all entries e.g. fibrinogen_human, fibrinogen_mouse, fibrinogen_bovin. 
+
+The Shortlabel appears as "gene product name" when a Complex Portal AC is used as annotation object in Gene Ontology annotations.
 
 ### Complex Participants
 
 #### Proteins
 
-All proteins are derived from, and linked to, UniProtKB, ideally UniProtKB/Swiss-Prot. Isoform and chain designators will be used when appropriate. Should one or more isoforms exist, annotation will be to the canonical protein entry unless either only one isoform is known to exist in the complex or different isoforms give the complex different properties. In the latter case, a separate entry should be made for each variation with detail given in "curated-complex" or "complex-properties" as appropriate (see below for details on complex variants). 
+All proteins are derived from, and linked to, [UniProtKB](uniprot.org/) identifiers, ideally UniProtKB/Swiss-Prot. Isoform and chain designators are used when appropriate. Should one or more isoforms exist, annotation will be to the canonical protein entry unless either only one isoform is known to exist in the complex or different isoforms give the complex different properties. In the latter case, a separate entry should be made for each variation with detail given in the "Description" or "Properties" section as appropriate (see below for details on complex variants). 
 
 #### Small molecules /polysaccharides
 
-All small molecules are derived from, and linked to, ChEBI. Small molecules are entered if they are integral to the complex or bind to the complex as part of its function, e.g. cofactors, electron donors/acceptors, such as ATP, H+. Enzyme targets are not added as participants. For example, ATP is entered as a cofactor if the enzyme function is NOT primarily an ATPase (e.g. EBI-9008779 gyrase_ecoli) but NOT entered for ATPases where it is a substrate (e.g. EBI-9007893 mfd-uvra_ecoli, a DNA translocase). 
+All small molecules are derived from, and linked to, [ChEBI](https://www.ebi.ac.uk/chebi/) identifiers. Small molecules are included only if they are integral to the complex or bind to the complex as part of its function, e.g. cofactors, electron donors/acceptors, such as ATP, H+. Enzyme targets are not added as participants. For example, ATP is entered as a cofactor if the enzyme function is NOT primarily an ATPase (e.g. [GyrA-GyrB DNA Gyrase complex](https://www.ebi.ac.uk/complexportal/complex/CPX-2177)) but NOT entered for ATPases where it is a substrate (e.g. [TRCF-UvrA complex](https://www.ebi.ac.uk/complexportal/complex/CPX-2155)). In the latter case the substrate is added using a [Gene Ontology](http://geneontology.org/) annotation, e.g. [ATP binding](https://www.ebi.ac.uk/QuickGO/term/GO:0005524).
 
 #### Nucleic acids
 
-Nucleic acids are only entered as participants when they are an obligate part of the complex. Non-coding RNA participants are linked to RNACentral, all other nucleic acid types are created as generic molecules linked to generic ChEBI identifiers. For complexes which assemble and then bind to a nucleic acid, this function is indicated in free text and using GO terms such as GO:0003677 DNA binding. 
+Nucleic acids are only entered as participants when they are an obligate part of the complex. Non-coding RNA participants are linked to [RNACentral](https://rnacentral.org/) identifiers, all other nucleic acid types are created as generic molecules linked to generic [ChEBI](https://www.ebi.ac.uk/chebi/) identifiers. For complexes which assemble and then bind to a nucleic acids, this function is indicated in free text and annotated using [Gene Ontology](http://geneontology.org/) terms such as [DNA binding](https://www.ebi.ac.uk/QuickGO/term/GO:0003677).
+
+#### Complex
+
+A complex can also be a participant of a complex, e.g. [CMG-Pol epsilon complex](https://www.ebi.ac.uk/complexportal/complex/CPX-1556).
 
 ### Participant Features
 
-- Any features known to be involved in the reactions are mapped to the underlying sequence, as given in the source database, and cross-referenced to InterPro when possible. If a PTM is required for complex activation, this is curated as a feature and the effects detailed in the annotation field 'Complex-properties'.
-- Binding sites or residues within proteins, known to directly interact within the complex, are shown as linked features in the graphical views.
-- Stoichiometry is added, when known. Stoichiometry=0 is used for participants with no information about stoichiometry. It is common that stoichiometry is only know for some participants in the same complex.
+- Any feature is mapped to the underlying sequence, as given in the source database, and cross-referenced to InterPro when possible. 
+- If a PTM is required for complex formation or activation it is curated as a feature and the effects detailed in the "Properties" section.
+- Binding regions or residues within proteins known to directly interact within the complex are shown as linked features in the graphical views.
+- Stoichiometry is added when known. Stoichiometry=0 (or empty field on the website and single participant in the Complex Viewer) is used for participants with no information about stoichiometry. It is common that stoichiometry is only know for some participants in the same complex.
 
 ### Interaction Type
 
-This is always 'Physical association' - the controlled vocabulary term indicating that these proteins are present in the same complex - unless there are one or two protein species involved in which case it will be 'Direct interaction'. Proteins directly binding to each other within a larger complex will be indicated by linked features (see above).
+This is always 'Physical association', indicating that these proteins are present in the same complex.
 
 ### Free text annotation
 
-#### Curated-complex
+#### Description
 
 A brief, free-text description of the function of the complex, written in the same style as a UniProtKB/Swiss-Prot entry. For example "Required for processive DNA replication and may act as a replicative helicase during DNA synthesis. Plays a central role in S-phase genome stability.". 
 
-#### Complex-properties
+#### Properties
 
 Details of physical properties of the complex. This may include details about the topology, varying (as opposed to absolute) stoichiometry, molecular weight and Stoke's radius of the complex. 
 
@@ -92,34 +103,27 @@ Only added when the disease state has been specifically linked to the protein wh
 
 #### Ligand
 
-When a complex has one or more ligands transiently associated with it, they will be listed under this heading. 
+Oe or more ligands transiently associated with this complex. They are usually linked to a [ChEBI](https://www.ebi.ac.uk/chebi/) identifier.
 
 ### Structured Annotations
 
-All structured annotation is entered as database/controlled vocabulary cross-reference with an appropriate qualifier term.
+All structured annotations are entered as database/controlled vocabulary cross-reference with an appropriate qualifier term.
 
 #### Gene Ontology
 
-Used to indicate the function, process and component of the complex as a whole. The Function term, in particular, may not be true for all members of the complex, for example enzyme complexes will be annotated with a catalytic function term even when some subunits play only a regulatory role. 
+Annotation to [Gene Ontology](http://geneontology.org) terms indicates the function, process, location and component of the complex as a whole. The Function term, in particular, may not be true for all members of the complex, for example enzyme complexes will be annotated with a catalytic function term even when some subunits play only a regulatory role. 
 
 #### Experimental evidence
 
-When high quality evidence for the existence of this complex is present in an IMEx database, this will be added manually as a cross-reference so that it may be downloaded in the same file as the complex. 
+When high quality evidence for the existence of this complex is present in an [IMEx database](http://www.imexconsortium.org/), this will be added manually as a cross-reference so that it may be downloaded in the same file as the complex. 
 
-#### 3D structure
+#### 3D structures (crystals and EM structures)
 
-Representative PDB cross-references will be added when the complex has been crystallised in its entirety. 
-
-#### Electron microscopy
-
-Representative EMDB cross-references will be added when the complex has been visualised by electron microscopy in its entirety. 
+Representative [wwPDB](https://www.ebi.ac.uk/pdbe/) and [EMDB](https://www.ebi.ac.uk/pdbe/emdb/) cross-references are added. Structures may represent the whole complex (qualifier = identity) or a partial complex (qualifier = subset). 
 
 #### Evidence codes
 
-The following ECO codes will be used to indicate the strength of evidence that a complex exists: 
-
-
-
+The following [Evidence and Conclusion Ontology (ECO)](http://www.evidenceontology.org/) codes are used to indicate the strength of evidence that a complex exists: 
 
 |ECO Code|Name|Description|
 |--------|----|-----------|
@@ -132,24 +136,24 @@ The following ECO codes will be used to indicate the strength of evidence that a
 
 #### Enzymatic activity
 
-The E.C. number linked to IntEnz will be added when an enzyme complex is described.
+Catalytical complexes are annotated with appropriate E.C. numbers linked to [IntEnz](https://www.ebi.ac.uk/intenz/) and reactions in [Rhea](https://www.rhea-db.org/).
 
 #### Additional literature
 
-Review articles or experimental data not appropriate for entering into IntAct are added. 
+Articles covering further experimental or functional information and review articles are added and lonked to [EuropePMC](http://europepmc.org/). 
 
 #### Pathway information
 
-For human complexes, crosslinks to Reactome put complexes into a pathway context. Note that the definition of a complex is different in Reactome and in many cases a one-to-many relationship exists. 
+For human complexes, crosslinks to [Reactome](https://reactome.org/) put complexes into a pathway context. Note that the definition of a complex is different in Reactome and in many cases a one-to-many relationship exists. 
 
 #### Disease information
 
-Cross references to the Experimental Factor Ontology (EFO) or their contributing databases (e.g. Orphanet, Human Phenotype Ontology) may be added if a complex or a chain when within that complex has been linked to a specific disease condition. 
+Cross references to the [Experimental Factor Ontology (EFO)](https://www.ebi.ac.uk/efo/) or their contributing databases (e.g. Orphanet, Human Phenotype Ontology) are added if a complex has been linked to a specific disease condition. 
 
 #### Drug target information
 
-Cross-links to ChEMBL are used to indicate complexes which have been used as drug targets. 
+Cross-links to [ChEMBL](https://www.ebi.ac.uk/chembl/) are used to indicate complexes which have been used as drug targets. 
 
 ### Complex Variants
 
-If variant forms of a complex exist i.e. the same functional unit can exist in alternate forms with differing macromolecular composition, these are curated as separate objects. For example, PDGF can exist as a PDGF-A homodimer, PDGF-B homodimer, PDGF-AB heterodimer, PDGF-C homodimer and a PDGF-D homodimer If the variants have well-accepted names, e.g. PDGF-AB, these may be used as the primary name. If not, then the recommended name is qualified by variant 1, variant 2 e.g. TRAMP complex variant 1 (EBI-2352894).
+If variant forms of a complex exist i.e. the same functional unit can exist in alternate forms with differing macromolecular composition, these are curated as separate objects. For example, PDGF can exist as a PDGF-A homodimer, PDGF-B homodimer, PDGF-AB heterodimer, PDGF-C homodimer and a PDGF-D homodimer. If the variants have well-accepted names, e.g. PDGF-AB, these may be used as the primary name. If not, then the recommended name is qualified by variant 1, variant 2 e.g. [TRAMP complex variant 1](https://www.ebi.ac.uk/complexportal/complex/CPX-1678).
