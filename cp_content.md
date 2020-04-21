@@ -20,35 +20,35 @@ A stable set of (two or more) interacting macromolecules such as proteins which 
 
 ### Species
 
-#### Multicellular organisms
+##### Multicellular organisms
 
 We curate to species level (e.g. *[Homo sapiens](https://www.uniprot.org/taxonomy/9606)*, *[Mus musculus](https://www.uniprot.org/taxonomy/10090)*, *[Caenorhabditis elegans](https://www.uniprot.org/taxonomy/6239)*).  
 
-#### Micro-organisms
+##### Micro-organisms
 
 We curate to the model organism strain (e.g. [*Saccharomyces cerevisiae* (strain ATCC 204508 / S288c)](https://www.uniprot.org/taxonomy/559292), [*Escherichia coli* (strain K12)](https://www.uniprot.org/taxonomy/83333)).
 
 In cases where a strain is not a model organisms but is of specific scientific interest we curate the complexes in the  species taxon and in the strain where the experimental evidence exists for the strain (e.g. [Human SARS coronavirus (SARS-CoV) species](https://www.uniprot.org/taxonomy/694009) and [SARS-CoV-2 strain](https://www.uniprot.org/taxonomy/2697049)).
 
-#### Host-pathogen complexes
+##### Host-pathogen complexes
 
 At the moment, each complex can only be assigned one species. In order to be able to combine all complexes for a given pathogen the complex is assigned the pathogen species.
 
 ### Complex Nomenclature
 
-#### Complex recommended name
+##### Complex recommended name
 
 The most informative, well accepted name in the literature, that is intuitive to the user. Where possible, this will be the same as the equivalent component term in the [Gene Ontology](http://geneontology.org/). The term should always end in the word 'complex' or homo'n'mer. The recommended name is kept consistent when a complex is conserved across a taxonomic range. 
 
-#### Complex systematic name
+##### Complex systematic name
 
 This is a string of gene symbols of the complex participants separated by a colon (e.g. "fiba:fibb:fibg") in alphanumeric order. The order is irrestective of species in a host-pathogen complex. Recommended gene symbols for each model organism will be used; therefore the systematic name may not be consistent when a complex is conserved across a taxonomic range. 
 
-#### Complex synonym
+##### Complex synonym
 
 All other possible names the complex is known by or can be described as.
 
-#### Shortlabel (not displayed on website, only in download files)
+##### Shortlabel (not displayed on website, only in download files)
 
 An obligate part of the data model. An appropriate designation for the complex with species indicated using the UniProt five letter code e.g. fibrinogen_human, tfiid_mouse. When the same complex is conserved across a taxonomic range, the root name is maintained across all entries e.g. fibrinogen_human, fibrinogen_mouse, fibrinogen_bovin. 
 
@@ -56,19 +56,19 @@ The Shortlabel appears as "gene product name" when a Complex Portal AC is used a
 
 ### Complex Participants
 
-#### Proteins
+##### Proteins
 
 All proteins are derived from, and linked to, [UniProtKB](uniprot.org/) identifiers, ideally UniProtKB/Swiss-Prot. Isoform and chain designators are used when appropriate. Should one or more isoforms exist, annotation will be to the canonical protein entry unless either only one isoform is known to exist in the complex or different isoforms give the complex different properties. In the latter case, a separate entry should be made for each variation with detail given in the "Description" or "Properties" section as appropriate (see below for details on complex variants). 
 
-#### Small molecules / polysaccharides
+##### Small molecules / polysaccharides
 
 All small molecules are derived from, and linked to, [ChEBI](https://www.ebi.ac.uk/chebi/) identifiers. Small molecules are included only if they are integral to the complex or bind to the complex as part of its function, e.g. cofactors, electron donors/acceptors, such as ATP, H+. Enzyme targets are not added as participants. For example, ATP is entered as a cofactor if the enzyme function is NOT primarily an ATPase (e.g. [GyrA-GyrB DNA Gyrase complex](https://www.ebi.ac.uk/complexportal/complex/CPX-2177)) but NOT entered for ATPases where it is a substrate (e.g. [TRCF-UvrA complex](https://www.ebi.ac.uk/complexportal/complex/CPX-2155)). In the latter case the substrate is added using a [Gene Ontology](http://geneontology.org/) annotation, e.g. [ATP binding](https://www.ebi.ac.uk/QuickGO/term/GO:0005524).
 
-#### Nucleic acids
+##### Nucleic acids
 
 Nucleic acids are only entered as participants when they are an obligate part of the complex. Non-coding RNA participants are linked to [RNACentral](https://rnacentral.org/) identifiers, all other nucleic acid types are created as generic molecules linked to generic [ChEBI](https://www.ebi.ac.uk/chebi/) identifiers. For complexes which assemble and then bind to a nucleic acids, this function is indicated in free text and annotated using [Gene Ontology](http://geneontology.org/) terms such as [DNA binding](https://www.ebi.ac.uk/QuickGO/term/GO:0003677).
 
-#### Complex
+###### Complex
 
 A complex can also be a participant of a complex, e.g. [CMG-Pol epsilon complex](https://www.ebi.ac.uk/complexportal/complex/CPX-1556).
 
@@ -85,23 +85,23 @@ This is always 'Physical association', indicating that these proteins are presen
 
 ### Free text annotation
 
-#### Description
+##### Description
 
 A brief, free-text description of the function of the complex, written in the same style as a UniProtKB/Swiss-Prot entry. For example "Required for processive DNA replication and may act as a replicative helicase during DNA synthesis. Plays a central role in S-phase genome stability.". 
 
-#### Properties
+##### Properties
 
 Details of physical properties of the complex. This may include details about the topology, varying (as opposed to absolute) stoichiometry, molecular weight and Stoke's radius of the complex. 
 
-#### Complex-assembly
+##### Complex-assembly
 
 Experimentally verified structural assembly e.g. homodimer, heterohexamer. Assemblies which have been computationally predicted are not included. 
 
-#### Disease
+##### Disease
 
 Only added when the disease state has been specifically linked to the protein when in the complex. 
 
-#### Ligand
+##### Ligand
 
 Oe or more ligands transiently associated with this complex. They are usually linked to a [ChEBI](https://www.ebi.ac.uk/chebi/) identifier.
 
@@ -109,19 +109,19 @@ Oe or more ligands transiently associated with this complex. They are usually li
 
 All structured annotations are entered as database/controlled vocabulary cross-reference with an appropriate qualifier term.
 
-#### Gene Ontology
+##### Gene Ontology
 
 Annotation to [Gene Ontology](http://geneontology.org) terms indicates the function, process, location and component of the complex as a whole. The Function term, in particular, may not be true for all members of the complex, for example enzyme complexes will be annotated with a catalytic function term even when some subunits play only a regulatory role. 
 
-#### Experimental evidence
+##### Experimental evidence
 
 When high quality evidence for the existence of this complex is present in an [IMEx database](http://www.imexconsortium.org/), this will be added manually as a cross-reference so that it may be downloaded in the same file as the complex. 
 
-#### 3D structures (crystals and EM structures)
+##### 3D structures (crystals and EM structures)
 
 Representative [wwPDB](https://www.ebi.ac.uk/pdbe/) and [EMDB](https://www.ebi.ac.uk/pdbe/emdb/) cross-references are added. Structures may represent the whole complex (qualifier = identity) or a partial complex (qualifier = subset). 
 
-#### Evidence codes
+##### Evidence codes
 
 The following [Evidence and Conclusion Ontology (ECO)](http://www.evidenceontology.org/) codes are used to indicate the strength of evidence that a complex exists: 
 
@@ -134,23 +134,23 @@ The following [Evidence and Conclusion Ontology (ECO)](http://www.evidenceontolo
 |ECO:0005546|biological system reconstruction evidence based on paralogy evidence used in manual assertion|Used when experimental evidence exists for a complex and it is desirable to curate a similar complex in the same species for which only limited experimental evidence exists. Sequences and number of genome-encoded components are fairly conserved but some divergence may be observed. The complex with the experimental evidence must be annotated with ECO:0000353 or ECO:0005543 and has to be cross-referenced with the qualifier = "inferred-from".|
 |ECO:0005547|biological system reconstruction evidence based on inference from background scientific knowledge used in manual assertion|Used when no or only partial experimental evidence exists but the complex is generally assumed to exist. Functional studies or ligand binding evidence from pharmacological experiments are often used for the reconstruction of such complexes.|
 
-#### Enzymatic activity
+##### Enzymatic activity
 
 Catalytical complexes are annotated with appropriate E.C. numbers linked to [IntEnz](https://www.ebi.ac.uk/intenz/) and reactions in [Rhea](https://www.rhea-db.org/).
 
-#### Additional literature
+##### Additional literature
 
 Articles covering further experimental or functional information and review articles are added and lonked to [EuropePMC](http://europepmc.org/). 
 
-#### Pathway information
+##### Pathway information
 
 For human complexes, crosslinks to [Reactome](https://reactome.org/) put complexes into a pathway context. Note that the definition of a complex is different in Reactome and in many cases a one-to-many relationship exists. 
 
-#### Disease information
+##### Disease information
 
 Cross references to the [Experimental Factor Ontology (EFO)](https://www.ebi.ac.uk/efo/) or their contributing databases (e.g. Orphanet, Human Phenotype Ontology) are added if a complex has been linked to a specific disease condition. 
 
-#### Drug target information
+##### Drug target information
 
 Cross-links to [ChEMBL](https://www.ebi.ac.uk/chembl/) are used to indicate complexes which have been used as drug targets. 
 
