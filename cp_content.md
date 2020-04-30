@@ -20,15 +20,17 @@ A stable set of (two or more) interacting macromolecules such as proteins which 
 
 ### Species
 
+Currently, our curation focuses on model organisms and globally important micro-organisms.
+
 **Multicellular organisms**
 
 We curate to species level (e.g. *[Homo sapiens](https://www.uniprot.org/taxonomy/9606)*, *[Mus musculus](https://www.uniprot.org/taxonomy/10090)*, *[Caenorhabditis elegans](https://www.uniprot.org/taxonomy/6239)*).  
 
 **Micro-organisms**
 
-We curate to the model organism strain (e.g. [*Saccharomyces cerevisiae* (strain ATCC 204508 / S288c)](https://www.uniprot.org/taxonomy/559292), [*Escherichia coli* (strain K12)](https://www.uniprot.org/taxonomy/83333)).
+We curate to the model organism strain or reference proteome (e.g. [*Saccharomyces cerevisiae* (strain ATCC 204508 / S288c)](https://www.uniprot.org/taxonomy/559292), [*Escherichia coli* (strain K12)](https://www.uniprot.org/taxonomy/83333)).
 
-In cases where a strain is not a model organisms but is of specific scientific interest we curate the complexes in the  species taxon and in the strain where the experimental evidence exists for the strain (e.g. [Human SARS coronavirus (SARS-CoV) species](https://www.uniprot.org/taxonomy/694009) and [SARS-CoV-2 strain](https://www.uniprot.org/taxonomy/2697049)).
+In cases where an organism is not a model organisms but is of specific scientific interest we curate the complexes in the strain where the experimental evidence exists and, if possible, in the species level taxon (e.g. species [Human SARS coronavirus](https://www.uniprot.org/taxonomy/694009) and strain [Severe acute respiratory syndrome coronavirus 2](https://www.uniprot.org/taxonomy/2697049)). If the strain or species level taxon has multiple equal UniProt Trembl entries that cannot be distinguished we choose the strain that has experimental evidence or the reference proteome (e.g. for species [Middle East respiratory syndrome-related coronavirus](https://www.uniprot.org/taxonomy/1335626) only Trembl entries exist, while strain [Middle East respiratory syndrome-related coronavirus (isolate United Kingdom/H123990006/2012)](https://www.uniprot.org/taxonomy/1263720) is the reference proteome and several experiments also exist for strain [Middle East respiratory syndrome-related coronavirus (Human betacoronavirus 2c EMC/2012)](https://www.uniprot.org/taxonomy/1235996)).
 
 **Host-pathogen complexes**
 
