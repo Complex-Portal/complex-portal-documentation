@@ -165,3 +165,26 @@ If variant forms of a complex exist i.e. the same functional unit can exist in a
 A version is identified by a .x suffix (where x is a number) of the accession number. The version is included in the download files but not displayed on the website.
 
 A complex receives a new version if its participants change (adding or removing one or more participants) or its function is redefined. 
+
+### Rapid Curation rules
+
+### Versioning
+
+Minimum requirements for RAPID CURATION in ComplexPortal.
+
+Aim of rapid curation: speed-up the curation process for human and mouse entries
+
+Minimum requested fields (Mandatory):
+
+- List of interactors (UniprotAc)
+- Name
+- One reference (PMID) 
+- A one-sentence description (strongly encouraged)
+- ANNOTATION: ‘rapid curation’
+- ECO code, complex type, interaction type, organism
+
+Desiderable fields:
+- PDB or IntAct experimental evidence
+- Stoichiometry
+
+
