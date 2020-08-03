@@ -165,3 +165,7 @@ If variant forms of a complex exist i.e. the same functional unit can exist in a
 A version is identified by a .x suffix (where x is a number) of the accession number. The version is included in the download files but not displayed on the website.
 
 A complex receives a new version if its participants change (adding or removing one or more participants) or its function is redefined. 
+
+
+#### For curators
+Full curation manual can be found [here](https://github.com/Complex-Portal/complex-portal-documentation/blob/master/Manual_Complexes_Curation.docx)
