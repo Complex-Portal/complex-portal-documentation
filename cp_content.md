@@ -167,4 +167,4 @@ A version is identified by a .x suffix (where x is a number) of the accession nu
 A complex receives a new version if its participants change (adding or removing one or more participants) or its function is redefined. 
 
 #### For curators
-Full curation manual can be found [here](http://www.ebi.ac.uk/~intact/site/doc/Manual_Complexes_Curation.docx)
+Full curation manual can be found [here](http://www.ebi.ac.uk/~intact/site/doc/Manual_Complexes_Curation.pdf)
