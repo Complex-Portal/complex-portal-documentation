@@ -58,21 +58,25 @@ The Shortlabel appears as "gene product name" when a Complex Portal AC is used a
 
 ### Complex Participants
 
-**Proteins**
+**Protein**
 
 All proteins are derived from, and linked to, [UniProtKB](uniprot.org/) identifiers, ideally UniProtKB/Swiss-Prot. Isoform and chain designators are used when appropriate. Should one or more isoforms exist, annotation will be to the canonical protein entry unless either only one isoform is known to exist in the complex or different isoforms give the complex different properties. In the latter case, a separate entry should be made for each variation with detail given in the "Description" or "Properties" section as appropriate (see below for details on complex variants). 
 
-**Small molecules / polysaccharides**
+**Small molecule / polysaccharide**
 
 All small molecules are derived from, and linked to, [ChEBI](https://www.ebi.ac.uk/chebi/) identifiers. Small molecules are included only if they are integral to the complex or bind to the complex as part of its function, e.g. cofactors, electron donors/acceptors, such as ATP, H+. Enzyme targets are not added as participants. For example, ATP is entered as a cofactor if the enzyme function is NOT primarily an ATPase (e.g. [GyrA-GyrB DNA Gyrase complex](https://www.ebi.ac.uk/complexportal/complex/CPX-2177)) but NOT entered for ATPases where it is a substrate (e.g. [TRCF-UvrA complex](https://www.ebi.ac.uk/complexportal/complex/CPX-2155)). In the latter case the substrate is added using a [Gene Ontology](http://geneontology.org/) annotation, e.g. [ATP binding](https://www.ebi.ac.uk/QuickGO/term/GO:0005524).
 
-**Nucleic acids**
+**Nucleic acid**
 
 Nucleic acids are only entered as participants when they are an obligate part of the complex. Non-coding RNA participants are linked to [RNACentral](https://rnacentral.org/) identifiers, all other nucleic acid types are created as generic molecules linked to generic [ChEBI](https://www.ebi.ac.uk/chebi/) identifiers. For complexes which assemble and then bind to a nucleic acids, this function is indicated in free text and annotated using [Gene Ontology](http://geneontology.org/) terms such as [DNA binding](https://www.ebi.ac.uk/QuickGO/term/GO:0003677).
 
 **Complex**
 
 A complex can also be a participant of a complex, e.g. [CMG-Pol epsilon complex](https://www.ebi.ac.uk/complexportal/complex/CPX-1556).
+
+**Molecule set**
+
+In some cases, such as ribosomal proteins, it is impossible to distinguish from which paralogous gene a protein is expressed. In these rare cases we have created sets that contain references to both UniProt instances of this protein. Sets have accessions of the type EBI-{1-9}. These sets are equivalent to the "defined sets" as used in [Reactome](https://reactome.org/): "A collection of well-characterized physical entities that are functionally indistinguishable for the purpose of Reactome annotation, e.g., a collection of isoforms of a protein that all mediate the identical metabolic reaction."
 
 ### Participant Features
 
