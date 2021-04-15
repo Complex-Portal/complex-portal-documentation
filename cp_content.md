@@ -76,7 +76,7 @@ A complex can also be a participant of a complex, e.g. [CMG-Pol epsilon complex]
 
 **Molecule set**
 
-In some cases, such as ribosomal proteins, it is impossible to distinguish from which paralogous gene a protein is expressed. In these rare cases we have created sets that contain references to both UniProt instances of this protein. Sets have accessions of the type EBI-{1-9}. These sets are equivalent to the "defined sets" as used in [Reactome](https://reactome.org/): "A collection of well-characterized physical entities that are functionally indistinguishable for the purpose of Reactome annotation, e.g., a collection of isoforms of a protein that all mediate the identical metabolic reaction."
+In some cases, such as ribosomal proteins, it is impossible to distinguish from which paralogous gene a protein is expressed. In these rare cases we have created sets that contain references to both UniProt instances of this protein. Sets have accessions of the type EBI-{0-9}. These sets are equivalent to the "defined sets" as used in [Reactome](https://reactome.org/): "A collection of well-characterized physical entities that are functionally indistinguishable for the purpose of Reactome annotation, e.g., a collection of isoforms of a protein that all mediate the identical metabolic reaction."
 
 ### Participant Features
 
