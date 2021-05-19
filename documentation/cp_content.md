@@ -89,51 +89,21 @@ In some cases, such as ribosomal proteins, it is impossible to distinguish from 
 
 This is always 'Physical association', indicating that these proteins are present in the same complex.
 
-## Free text annotation
-
-### Description
-
-A brief, free-text description of the function of the complex, written in the same style as a UniProtKB/Swiss-Prot entry. For example "Required for processive DNA replication and may act as a replicative helicase during DNA synthesis. Plays a central role in S-phase genome stability.". 
-
-### Properties
-
-Details of physical properties of the complex. This may include details about the topology, varying (as opposed to absolute) stoichiometry, molecular weight and Stoke's radius of the complex. 
-
-### Complex-assembly
-
-Experimentally verified structural assembly e.g. homodimer, heterohexamer. Assemblies which have been computationally predicted are not included. 
-
-### Disease
-
-Only added when the disease state has been specifically linked to the protein when in the complex. 
-
-### Ligands
-
-Oe or more ligands transiently associated with this complex. They are usually linked to a [ChEBI](https://www.ebi.ac.uk/chebi/) identifier.
-
-## Structured Annotations
-
-All structured annotations are entered as database/controlled vocabulary cross-reference with an appropriate qualifier term.
-
-### Gene Ontology
-
-Annotation to [Gene Ontology](http://geneontology.org) terms indicates the function, process, location and component of the complex as a whole. The Function term, in particular, may not be true for all members of the complex, for example enzyme complexes will be annotated with a catalytic function term even when some subunits play only a regulatory role. 
-
-### Experimental evidence
+## Experimental evidence
 
 Every effort is made to link all entries to an experimental molecular interaction evidence but this is not always possible. We use the [Evidence and Conclusion Ontology (ECO)](http://www.evidenceontology.org/) to describe the type of evidence that was used to decide on the complex and link to primary molecular interaction databases where possible.
 
-#### Primary experimental evidence
+### Primary experimental evidence
 
 When high quality evidence for the existence of this complex is present in an [IMEx database](http://www.imexconsortium.org/), [wwPDB](https://www.ebi.ac.uk/pdbe/) or [EMDB](https://www.ebi.ac.uk/pdbe/emdb/), an "exp-evidence"-type cross-reference to this database is added manually so that it may be downloaded in the same file as the complex. 
 
 Complexes with "exp-evidence"-type cross-reference must also be annotated with ECO codes ECO:0000353 or ECO:0005543 (see below). 
 
-#### Additional experimental evidences from 3D structures (crystals and EM structures)
+### Additional experimental evidences from 3D structures (crystals and EM structures)
 
 Additional, representative [wwPDB](https://www.ebi.ac.uk/pdbe/) and [EMDB](https://www.ebi.ac.uk/pdbe/emdb/) cross-references may be added. Structures may represent the whole complex (qualifier = identity) or a partial complex (qualifier = subset). 
 
-#### Evidence codes
+### Evidence codes
 
 The following [Evidence and Conclusion Ontology (ECO)](http://www.evidenceontology.org/) codes are used to indicate the strength of evidence that a complex exists: 
 
@@ -154,36 +124,66 @@ The following [Evidence and Conclusion Ontology (ECO)](http://www.evidenceontolo
 
 - If is no known or curated experimental evidence is available for a complex (ECO:0005547) the complex has been inferred from several references or review(s) which are listed among the "additional literature" cross-references.
 
-**Enzymatic activity**
+## Free text annotation
+
+### Description
+
+A brief, free-text description of the function of the complex, written in the same style as a UniProtKB/Swiss-Prot entry. For example "Required for processive DNA replication and may act as a replicative helicase during DNA synthesis. Plays a central role in S-phase genome stability.". 
+
+### Properties
+
+Details of physical properties of the complex. This may include details about the topology, varying (as opposed to absolute) stoichiometry, molecular weight and Stoke's radius of the complex. 
+
+### Complex-assembly
+
+Experimentally verified structural assembly e.g. homodimer, heterohexamer. Assemblies which have been computationally predicted are not included. 
+
+### Disease
+
+Only added when the disease state has been specifically linked to the protein when in the complex. 
+
+### Ligands
+
+One or more ligands transiently associated with this complex. They are usually linked to a [ChEBI](https://www.ebi.ac.uk/chebi/) identifier.
+
+## Structured Annotations
+
+All structured annotations are entered as database/controlled vocabulary cross-reference with an appropriate qualifier term.
+
+### Gene Ontology
+
+Annotation to [Gene Ontology](http://geneontology.org) terms indicates the function, process, location and component of the complex as a whole. The Function term, in particular, may not be true for all members of the complex, for example enzyme complexes will be annotated with a catalytic function term even when some subunits play only a regulatory role. 
+
+### Enzymatic activity
 
 Catalytical complexes are annotated with appropriate E.C. numbers linked to [IntEnz](https://www.ebi.ac.uk/intenz/) and reactions in [Rhea](https://www.rhea-db.org/).
 
-**Additional literature**
+### Additional literature
 
 Articles covering further experimental or functional information and review articles are added and linked to [EuropePMC](http://europepmc.org/). 
 
-**Pathway information**
+### Pathway information
 
 For human complexes, crosslinks to [Reactome](https://reactome.org/) put complexes into a pathway context. Note that the definition of a complex is different in Reactome and in many cases a one-to-many relationship exists. 
 
-**Disease information**
+### Disease information
 
 Cross references to the [Experimental Factor Ontology (EFO)](https://www.ebi.ac.uk/efo/) or their contributing databases (e.g. Orphanet, Human Phenotype Ontology) are added if a complex has been linked to a specific disease condition. 
 
-**Drug target information**
+### Drug target information
 
 Cross-links to [ChEMBL](https://www.ebi.ac.uk/chembl/) are used to indicate complexes which have been used as drug targets. 
 
-### Complex Variants
+## Complex Variants
 
 If variant forms of a complex exist i.e. the same functional unit can exist in alternate forms with differing macromolecular composition, these are curated as separate objects. For example, PDGF can exist as a PDGF-A homodimer, PDGF-B homodimer, PDGF-AB heterodimer, PDGF-C homodimer and a PDGF-D homodimer. If the variants have well-accepted names, e.g. PDGF-AB, these may be used as the primary name. If not, then the recommended name is qualified by variant 1, variant 2 e.g. [TRAMP complex variant 1](https://www.ebi.ac.uk/complexportal/complex/CPX-1678).
 
-### Versioning
+## Versioning
 
 A version is identified by a .x suffix (where x is a number) of the accession number. The version is included in the download files but not displayed on the website.
 
 A complex receives a new version if its participants change (adding or removing one or more participants) or its function is redefined. 
 
-#### For curators
-Full curation manual can be found [here](http://www.ebi.ac.uk/~intact/site/doc/Manual_Complexes_Curation.pdf)
+## For curators
 
+Full curation manual can be found [here](http://www.ebi.ac.uk/~intact/site/doc/Manual_Complexes_Curation.pdf)
