@@ -1,4 +1,4 @@
-Complex Portal provides its data in 3 different file formats, PSI-MI XML, MI-JSON and ComplexTab. Below are links to our schemas and some content explanations. For details on curation strategies, please see the [Data Content](/[^ ]*/documentation) section.
+Complex Portal provides its data in 3 different file formats, PSI-MI XML, MI-JSON and ComplexTab. Below are links to our schemas and some content explanations. For details on curation strategies, please see the [Data Content](/./documentation) section.
 
 ## PSI-MI XML
 
