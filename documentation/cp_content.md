@@ -93,7 +93,7 @@ This is always 'Physical association', indicating that these proteins are presen
 
 Every effort is made to link all entries to an experimental molecular interaction evidence but this is not always possible. We use the [Evidence and Conclusion Ontology (ECO)](http://www.evidenceontology.org/) to describe the type of evidence that was used to decide on the complex and link to primary molecular interaction databases where possible.
 
-**### Primary experimental evidence**
+### Primary experimental evidence
 
 When high quality evidence for the existence of this complex is present in an [IMEx database](http://www.imexconsortium.org/), [wwPDB](https://www.ebi.ac.uk/pdbe/) or [EMDB](https://www.ebi.ac.uk/pdbe/emdb/), an "exp-evidence"-type cross-reference to this database is added manually so that it may be downloaded in the same file as the complex. 
 
