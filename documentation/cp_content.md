@@ -93,7 +93,7 @@ This is always 'Physical association', indicating that these proteins are presen
 
 Every effort is made to link all entries to an experimental molecular interaction evidence but this is not always possible. We use the [Evidence and Conclusion Ontology (ECO)](http://www.evidenceontology.org/) to describe the type of evidence that was used to decide on the complex and link to primary molecular interaction databases where possible.
 
-### Primary experimental evidence
+**### Primary experimental evidence**
 
 When high quality evidence for the existence of this complex is present in an [IMEx database](http://www.imexconsortium.org/), [wwPDB](https://www.ebi.ac.uk/pdbe/) or [EMDB](https://www.ebi.ac.uk/pdbe/emdb/), an "exp-evidence"-type cross-reference to this database is added manually so that it may be downloaded in the same file as the complex. 
 
@@ -116,7 +116,7 @@ The following [Evidence and Conclusion Ontology (ECO)](http://www.evidenceontolo
 |ECO:0005546|biological system reconstruction evidence based on paralogy evidence used in manual assertion|Used when experimental evidence exists for a complex and it is desirable to curate a similar complex in the same species for which only limited experimental evidence exists. Sequences and number of genome-encoded components are fairly conserved but some divergence may be observed. The complex with the experimental evidence must be annotated with ECO:0000353 or ECO:0005543 and has to be cross-referenced with the qualifier = "inferred-from".|
 |ECO:0005547|biological system reconstruction evidence based on inference from background scientific knowledge used in manual assertion|Used when no or only partial experimental evidence exists but the complex is generally assumed to exist. Functional studies or ligand binding evidence from pharmacological experiments are often used for the reconstruction of such complexes.|
 
-#### Retrieval of references for curation evidence
+### Retrieval of references for curation evidence
 
 - If experimental evidence is referenced (ECO:0000353 or ECO:0005543) the reference for the experimental data has to be retrieved from the primary databases (IntAct/IMEx, wwPDB, EMDB). The relevant PubMed reference is not necessarily listed in the cross-references.
 
