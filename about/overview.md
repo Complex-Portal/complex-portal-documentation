@@ -20,4 +20,4 @@ All complexes are derived from physical molecular interaction evidences extracte
 
 - Judgment of what constitutes a stable complex is based on a consensus decision made by two curators.
 
-More information on our curation rules can be found [here](https://www.ebi.ac.uk/complexportal/documentation/data_content).
+More information on our curation rules can be found [here](https://www.ebi.ac.uk/complexportal/documentation#data_content).
