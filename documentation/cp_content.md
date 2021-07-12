@@ -184,6 +184,14 @@ A version is identified by a .x suffix (where x is a number) of the accession nu
 
 A complex receives a new version if its participants change (adding or removing one or more participants) or its function is redefined. 
 
+## Obsoleted Complexes
+
+If a complex has to be removed from the release database it is still available in previous release files accessible via our [ftp repository](http://ftp.ebi.ac.uk/pub/databases/intact/complex/current/) and marked as “on-hold” in our database. 
+
+If the complex has been merged into an existing entry the accession number of the obsoleted complex is added to the complex it has been merged into as secondary ID allowing a user to still retrieve an entry. 
+
+Secondary IDs are available in all download files while the website currently only displays the primary AC (e.g. CPX-3042 is now part of [CPX-2161](https://www.ebi.ac.uk/complexportal/complex/CPX-2161)).
+
 ## For curators
 
 Full curation manual can be found [here](http://www.ebi.ac.uk/~intact/site/doc/Manual_Complexes_Curation.pdf)
