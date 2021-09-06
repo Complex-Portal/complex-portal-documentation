@@ -10,13 +10,13 @@ The schema and full details are found [here](https://www.psidev.info/mif)
 
 ### Schema
 
-The schema and full details are found [here](https://github.com/MICommunity/psi-jami/blob/master/jami-interactionviewer-json/schema/mi-json-schema.json)
+The schema and full details are found [here](https://github.com/MICommunity/psi-jami/tree/master/jami-interactionviewer-json)
 
 ### Notes
 
 The MI-JSON provides the core interaction data, including all binding features, in a more concise format than PSI-MI XML for use cases where the XML files are too large to transfer in a reasonable amount of time. It removes the following content:
 
-- annotation, such as function and properties description, complex assembly, disease statements
+- annotations, such as function and properties description, complex assembly, disease statements
 
 - interactor cross-references, while it retains the interaction (=complex) cross-references
 
