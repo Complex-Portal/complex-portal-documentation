@@ -194,6 +194,6 @@ Secondary IDs are available in all download files while the website currently on
 
 ## For curators
 
-For trainined curators: here is the latest version of our [Complex Portal curation manual](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/documentation/Manual_Complexes_curation.pdf).
+For trainined curators: here is the latest version of our [Complex Portal curation manual]((https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/assets/Manual_Complexes_curation.pdf).
 
 Depending on your browser, you may have to right click on the link and choose "Save Link As" to download the file.
