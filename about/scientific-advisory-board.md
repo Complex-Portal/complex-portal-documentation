@@ -1,4 +1,4 @@
-# Scientific Advisory Board
+## Scientific Advisory Board
 
 A panel of internationally-renowned experts advise the Complex Portal and IntAct team and hold a review meeting once every 18 months. Current SAB panel members are:
 
