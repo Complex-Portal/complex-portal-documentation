@@ -1,3 +1,5 @@
+## Overview of Complex Portal
+
 The Complex Portal is a manually curated, encyclopaedic resource of macromolecular complexes from a number of key model organisms. 
 
 Complexes are defined as an assembly of any two or more proteins and/or nucleic acids that are stable enough in vitro to be reconstituted and have been demonstrated to have a specific molecular function. They may also contain small molecules if they are essential, functional components.
