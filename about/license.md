@@ -1,4 +1,4 @@
-## Complex Portal content and software
+## Complex Portal content and software license
 
 Complex Portal is an open source, open data resource, available to anyone. Usage of Complex Portal material is covered by two licenses:
 
@@ -8,6 +8,6 @@ The terms of the [Apache License, Version 2.0](https://www.apache.org/licenses/L
 
 For attribution please go to our [Publications](https://www.ebi.ac.uk/complexportal/about#publications) page.
 
-## ComplexViewer
+## ComplexViewer license
 
 The terms of the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) apply to the [ComplexViewer widget](https://github.com/MICommunity/ComplexViewer/blob/master/LICENSE).
