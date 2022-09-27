@@ -6,4 +6,4 @@ Meldal BHM, Bye-A-Jee H, Gajdoš L, Hammerová Z, Horácková A, Melicher F, Per
 
 ### Other publications
 
-Other publications by the team can be found in our [Google Scholar profile](https://scholar.google.com/citations?user=BoKDQaMAAAAJ&hl=en).
+Other publications by the team can be found in our [Google Scholar profile](https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=BM_RTG0AAAAJ&sortby=pubdate).
