@@ -11,3 +11,7 @@ For attribution please go to our [Publications](https://www.ebi.ac.uk/complexpor
 ## ComplexViewer license
 
 The terms of the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) apply to the [ComplexViewer widget](https://github.com/MICommunity/ComplexViewer/blob/master/LICENSE).
+
+## Data Preservation
+
+Complex Portal conforms to the EBI long-term data preservation [policies](https://www.ebi.ac.uk/long-term-data-preservation).
