@@ -18,9 +18,9 @@ The MI-JSON provides the core interaction data, including all binding features, 
 
 - annotations, such as function and properties description, complex assembly, disease statements
 
-- interactor cross-references, while it retains the interaction (=complex) cross-references
+- component cross-references, while it retains the interaction (=complex) cross-references
 
-- interactor aliases, such as gene names, secondary UniProt IDs
+- component aliases, such as gene names, secondary UniProt IDs
 
 Use case: [ComplexViewer](https://github.com/MICommunity/ComplexViewer)
 
@@ -64,4 +64,4 @@ Use case: [ComplexViewer](https://github.com/MICommunity/ComplexViewer)
 
 18. Source: database associated with the curator of the complex, represented as “psi-mi:”ac”(sourceName)” where ac is the primary accession and sourceName the name of the source database as defined in the PSI-MI controlled vocabulary. This column should never be empty ('-').
 
-19. Expanded participant list: lists only UniProt ac’s and stoichiometry from column 5 represented as "ac(stoichiometry)”, where UniProt ac’s are expanded for participants that are complexes. This column should never be empty ('-'). Multiple identifiers are separated by "|".
+19. Expanded component list: lists only UniProt ac’s and stoichiometry from column 5 represented as "ac(stoichiometry)”, where UniProt ac’s are expanded for components that are complexes. This column should never be empty ('-'). Multiple identifiers are separated by "|".
