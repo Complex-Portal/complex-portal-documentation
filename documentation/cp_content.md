@@ -44,7 +44,7 @@ The most informative, well accepted name in the literature, that is intuitive to
 
 ### Complex systematic name
 
-This is a string of gene symbols of the complex participants separated by a colon (e.g. "fiba:fibb:fibg") in alphanumeric order. The order is irrestective of species in a host-pathogen complex. Recommended gene symbols for each model organism will be used; therefore the systematic name may not be consistent when a complex is conserved across a taxonomic range. 
+This is a string of gene symbols of the complex components separated by a colon (e.g. "fiba:fibb:fibg") in alphanumeric order. The order is irrestective of species in a host-pathogen complex. Recommended gene symbols for each model organism will be used; therefore the systematic name may not be consistent when a complex is conserved across a taxonomic range. 
 
 ### Complex synonym
 
@@ -56,7 +56,7 @@ An obligate part of the data model. An appropriate designation for the complex w
 
 The Shortlabel appears as "gene product name" when a Complex Portal AC is used as annotation object in Gene Ontology annotations.
 
-## Complex Participants
+## Complex Components
 
 ### Proteins
 
@@ -64,26 +64,26 @@ All proteins are derived from, and linked to, [UniProtKB](uniprot.org/) identifi
 
 ### Small molecules / polysaccharides
 
-All small molecules are derived from, and linked to, [ChEBI](https://www.ebi.ac.uk/chebi/) identifiers. Small molecules are included only if they are integral to the complex or bind to the complex as part of its function, e.g. cofactors, electron donors/acceptors, such as ATP, H+. Enzyme targets are not added as participants. For example, ATP is entered as a cofactor if the enzyme function is NOT primarily an ATPase (e.g. [GyrA-GyrB DNA Gyrase complex](https://www.ebi.ac.uk/complexportal/complex/CPX-2177)) but NOT entered for ATPases where it is a substrate (e.g. [TRCF-UvrA complex](https://www.ebi.ac.uk/complexportal/complex/CPX-2155)). In the latter case the substrate is added using a [Gene Ontology](http://geneontology.org/) annotation, e.g. [ATP binding](https://www.ebi.ac.uk/QuickGO/term/GO:0005524).
+All small molecules are derived from, and linked to, [ChEBI](https://www.ebi.ac.uk/chebi/) identifiers. Small molecules are included only if they are integral to the complex or bind to the complex as part of its function, e.g. cofactors, electron donors/acceptors, such as ATP, H+. Enzyme targets are not added as components. For example, ATP is entered as a cofactor if the enzyme function is NOT primarily an ATPase (e.g. [GyrA-GyrB DNA Gyrase complex](https://www.ebi.ac.uk/complexportal/complex/CPX-2177)) but NOT entered for ATPases where it is a substrate (e.g. [TRCF-UvrA complex](https://www.ebi.ac.uk/complexportal/complex/CPX-2155)). In the latter case the substrate is added using a [Gene Ontology](http://geneontology.org/) annotation, e.g. [ATP binding](https://www.ebi.ac.uk/QuickGO/term/GO:0005524).
 
 ### Nucleic acids
 
-Nucleic acids are only entered as participants when they are an obligate part of the complex. Non-coding RNA participants are linked to [RNACentral](https://rnacentral.org/) identifiers, all other nucleic acid types are created as generic molecules linked to generic [ChEBI](https://www.ebi.ac.uk/chebi/) identifiers. For complexes which assemble and then bind to a nucleic acids, this function is indicated in free text and annotated using [Gene Ontology](http://geneontology.org/) terms such as [DNA binding](https://www.ebi.ac.uk/QuickGO/term/GO:0003677).
+Nucleic acids are only entered as components when they are an obligate part of the complex. Non-coding RNA components are linked to [RNACentral](https://rnacentral.org/) identifiers, all other nucleic acid types are created as generic molecules linked to generic [ChEBI](https://www.ebi.ac.uk/chebi/) identifiers. For complexes which assemble and then bind to a nucleic acids, this function is indicated in free text and annotated using [Gene Ontology](http://geneontology.org/) terms such as [DNA binding](https://www.ebi.ac.uk/QuickGO/term/GO:0003677).
 
 ### Complexes
 
-A complex can also be a participant of a complex, e.g. [CMG-Pol epsilon complex](https://www.ebi.ac.uk/complexportal/complex/CPX-1556).
+A complex can also be a component of a complex, e.g. [CMG-Pol epsilon complex](https://www.ebi.ac.uk/complexportal/complex/CPX-1556).
 
 ### Molecule sets
 
 In some cases, such as ribosomal proteins, it is impossible to distinguish from which paralogous gene a protein is expressed. In these rare cases we have created sets that contain references to both UniProt instances of this protein. Sets have accessions of the type EBI-{0-9}. These sets are equivalent to the "defined sets" as used in [Reactome](https://reactome.org/): "A collection of well-characterized physical entities that are functionally indistinguishable for the purpose of Reactome annotation, e.g., a collection of isoforms of a protein that all mediate the identical metabolic reaction."
 
-## Participant Features
+## Component Features
 
 - Any feature is mapped to the underlying sequence, as given in the source database, and cross-referenced to InterPro when possible. 
 - If a PTM is required for complex formation or activation it is curated as a feature and the effects detailed in the "Properties" section.
 - Binding regions or residues within proteins known to directly interact within the complex are shown as linked features in the graphical views.
-- Stoichiometry is added when known. Stoichiometry=0 (or empty field on the website and single participant in the Complex Viewer) is used for participants with no information about stoichiometry. It is common that stoichiometry is only know for some participants in the same complex.
+- Stoichiometry is added when known. Stoichiometry=0 (or empty field on the website and single component in the Complex Viewer) is used for components with no information about stoichiometry. It is common that stoichiometry is only know for some components in the same complex.
 
 ## Interaction Type
 
@@ -182,7 +182,7 @@ If variant forms of a complex exist i.e. the same functional unit can exist in a
 
 A version is identified by a .x suffix (where x is a number) of the accession number. The version is included in the download files but not displayed on the website.
 
-A complex receives a new version if its participants change (adding or removing one or more participants) or its function is redefined. 
+A complex receives a new version if its components change (adding or removing one or more components) or its function is redefined. 
 
 ## Obsoleted Complexes
 
