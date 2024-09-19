@@ -2,7 +2,7 @@
 
 ### What is the Complex Portal?
 
-The Complex Portal is a manually curated, encyclopedic resource of macromolecular complexes from a number of key model organisms. Complexes may contain proteins as well as small molecules and nucleic acids, providing they are an integral part of the complex.
+The Complex Portal is a manually curated, encyclopedic resource of biologically functional and stable macromolecular complexes from a number of key model organisms. Complexes may contain proteins as well as small molecules and nucleic acids, providing they are an integral part of the complex.
 
 ### What can be described as a complex?
 
