@@ -1,8 +1,12 @@
 ## Data Content
 
-### What can be described as a complex
+### What is the Complex Portal?
 
-A stable set of (two or more) interacting macromolecules such as proteins which can be co-purified by an acceptable method and have been shown to exist as an isolated, functional unit in vivo. Any interacting, integral non-protein molecules (e.g. small molecules, nucleic acids) may also be included.
+The Complex Portal is a manually curated, encyclopedic resource of macromolecular complexes from a number of key model organisms. Complexes may contain proteins as well as small molecules and nucleic acids, providing they are an integral part of the complex.
+
+### What can be described as a complex?
+
+A stable set of (two or more) interacting macromolecules such as proteins which can be co-purified by an acceptable method and have been shown to exist as an isolated, functional unit in vivo. This definition has been extended to encompass molecules which associate to form scaffolding structures that are ready to recruit context-specific effector proteins to initiate activation of functionally distinct signalling pathways within the same physical multiprotein complexes. Any interacting, integral non-protein molecules (e.g. small molecules, nucleic acids) may also be included. In addition to the manually curated complexes, which adhere to this definition, the database provides extended coverage of the human complexome with high confidence assemblies of machine-learning predicted complexes.
 
 ### What should **NOT** be captured:
 
