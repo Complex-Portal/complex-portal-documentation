@@ -1,10 +1,12 @@
 ## Overview of Complex Portal
 
-The Complex Portal is a manually curated, encyclopaedic resource of macromolecular complexes from a number of key model organisms. 
+The Complex Portal is primarily a manually curated, encyclopaedic resource of macromolecular complexes from a number of key model organisms.
 
 Complexes are defined as an assembly of any two or more proteins and/or nucleic acids that are stable enough in vitro to be reconstituted and have been demonstrated to have a specific molecular function. They may also contain small molecules if they are essential, functional components.
 
-All complexes are derived from physical molecular interaction evidences extracted and cross-referenced from the literature and cross-referenced to the Molecular Interaction Database [IntAct](https://www.ebi.ac.uk/intact/) where available, or by curator inference from information on homologs in closely related species or by inference from scientific background. All complexes are tagged with [Evidence and Conclusion Ontology](https://www.ebi.ac.uk/ols/ontologies/eco) codes to indicate the type of evidence available for each entry.
+In addition to the manually curated complexes, which adhere to this definition, the database provides extended coverage of the human complexome with high confidence assemblies of machine-learning predicted complexes.
+
+All manually curated complexes are derived from physical molecular interaction evidences extracted and cross-referenced from the literature and cross-referenced to the Molecular Interaction Database [IntAct](https://www.ebi.ac.uk/intact/) where available, or by curator inference from information on homologs in closely related species or by inference from scientific background. All manually curated complexes are tagged with [Evidence and Conclusion Ontology](https://www.ebi.ac.uk/ols/ontologies/eco) codes to indicate the type of evidence available for each entry.
 
 **Special considerations:**
 
