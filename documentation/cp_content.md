@@ -195,9 +195,9 @@ Cross-links to [ChEMBL](https://www.ebi.ac.uk/chembl/) are used to indicate comp
     <tbody>
         <tr>
             <td rowspan=5>
-                EMDB<br>
-                Hu.MAP3.0<br>
-                PDB
+                <a href="https://www.ebi.ac.uk/emdb">EMDB</a><br>
+                <a href="https://humap3.proteincomplexes.org">Hu.MAP3.0</a><br>
+                <a href="http://www.ebi.ac.uk/pdbe">PDB</a><br>
             </td>
             <td><a href="https://www.ebi.ac.uk/ols4/ontologies/mi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMI_0356" target="_blank">Identical object in an external resource</a></td>
             <td>Components in the Complex Portal complex and hu.MAP3.0 cluster or PDB/EMDB structure are identical. </td>
