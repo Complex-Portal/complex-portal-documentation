@@ -195,8 +195,8 @@ Cross-links to [ChEMBL](https://www.ebi.ac.uk/chembl/) are used to indicate comp
     <tbody>
         <tr>
             <td rowspan=5>
-                EMDB
-                Hu.MAP3.0
+                EMDB<br>
+                Hu.MAP3.0<br>
                 PDB
             </td>
             <td><a href="https://www.ebi.ac.uk/ols4/ontologies/mi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMI_0356" target="_blank">Identical object in an external resource</a></td>
