@@ -193,22 +193,24 @@ Cross-links to [ChEMBL](https://www.ebi.ac.uk/chembl/) are used to indicate comp
         </tr>
     </thead>
     <tbody>
-        <tr style="background-color: #000000; color: #000000;">
+        <tr>
             <td rowspan=5>
                 <a href="https://www.ebi.ac.uk/emdb">EMDB</a><br>
                 <a href="https://humap3.proteincomplexes.org">Hu.MAP3.0</a><br>
                 <a href="http://www.ebi.ac.uk/pdbe">PDB</a><br>
             </td>
-            <td style="background-color: 000000; color: #000000;"><a href="https://www.ebi.ac.uk/ols4/ontologies/mi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMI_0356" target="_blank">Identical object in an external resource</a></td>
-            <td style="background-color: 000000; color: #000000;">Components in the Complex Portal complex and hu.MAP3.0 cluster or PDB/EMDB structure are identical. </td>
+            <td><a href="https://www.ebi.ac.uk/ols4/ontologies/mi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMI_0356" target="_blank">Identical object in an external resource</a></td>
+            <td>Components in the Complex Portal complex and hu.MAP3.0 cluster or PDB/EMDB structure are identical. </td>
         </tr>
-        <tr style="background-color: 000000; color: #000000;">
-            <td style="background-color: 000000; color: #000000;"><a href="https://www.ebi.ac.uk/ols4/ontologies/mi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMI_2179" target="_blank">Subset</a></td>
-            <td style="background-color: 000000; color: #000000;">A partial match with additional complex components in the Complex Portal complex. </td>
+        <tr></tr>
+        <tr>
+            <td><a href="https://www.ebi.ac.uk/ols4/ontologies/mi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMI_2179" target="_blank">Subset</a></td>
+            <td>A partial match with additional complex components in the Complex Portal complex. </td>
         </tr>
-        <tr style="background-color: 000000; color: #000000;">
-            <td style="background-color: 000000; color: #000000;"><a href="https://www.ebi.ac.uk/ols4/ontologies/mi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMI_2427" target="_blank">Complex-cluster</a></td>
-            <td style="background-color: 000000; color: #000000;">Two or more complexes in the Complex Portal are a subset of a single hu.MAP3.0 entry with the difference being due to the clustering of paralogs in the hu.MAP3.0 complex.</td>
+        <tr></tr>
+        <tr>
+            <td><a href="https://www.ebi.ac.uk/ols4/ontologies/mi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMI_2427" target="_blank">Complex-cluster</a></td>
+            <td>Two or more complexes in the Complex Portal are a subset of a single hu.MAP3.0 entry with the difference being due to the clustering of paralogs in the hu.MAP3.0 complex.</td>
         </tr>
     </tbody>
 </table>
