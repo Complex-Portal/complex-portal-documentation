@@ -228,7 +228,7 @@ Cross-links to [ChEMBL](https://www.ebi.ac.uk/chembl/) are used to indicate comp
 
 ## Pairwise relationships
 
-Protein-protein data from multiple sources is displayed using gene names across the X and Y-axis in a heatmap. Below the heatmap is a correlation key ranging from 0-1, where 1 represents 100% co-expression between two proteins. Hover over the bricks of the heatmap for an exact score.
+Protein-protein interaction data from external sources is displayed using gene names across the X and Y-axis in a heatmap. Below the heatmap is a correlation key ranging from 0-1, where 1 represents 100% co-expression between two proteins. Hover over the bricks of the heatmap for an exact score.
 
 ### Sources
 
