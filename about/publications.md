@@ -2,7 +2,7 @@
 
 ### Please use this publication to cite Complex Portal:
 
-Meldal BHM, Bye-A-Jee H, Gajdoš L, Hammerová Z, Horácková A, Melicher F, Perfetto L, Pokorný D, Lopez MR, Türková A, Wong ED, Xie Z, Casanova EB, Del-Toro N, Koch M, Porras P, Hermjakob H, Orchard S (2019). Complex Portal 2018: extended content and enhanced visualization tools for macromolecular complexes. Nucleic Acids Res, 47(d1):D550-D558, 01 Jan 2019, PMID: 30357405: [Abstract](http://europepmc.org/article/MED/30357405), [Article](https://academic.oup.com/nar/article/47/D1/D550/5144138)
+Balu, S., Huget, S., Medina Reyes, J.J., Ragueneau, E., Panneerselvam, K., Fischer, S.N., Claussen, E.R., Kourtis, S., Combe, C.W., Meldal, B.H.M., Perfetto, L., Rappsilber, J., Kustatscher, G., Drew, K., Orchard, S., Hermjakob, H., 2025. Complex portal 2025: predicted human complexes and enhanced visualisation tools for the comparison of orthologous and paralogous complexes. Nucleic Acids Research 53, D644–D650. https://doi.org/10.1093/nar/gkae1085
 
 ### Other publications
 

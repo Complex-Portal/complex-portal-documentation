@@ -198,6 +198,7 @@ Cross-links to [ChEMBL](https://www.ebi.ac.uk/chembl/) are used to indicate comp
                 <a href="https://www.ebi.ac.uk/emdb">EMDB</a><br>
                 <a href="https://humap3.proteincomplexes.org">Hu.MAP3.0</a><br>
                 <a href="http://www.ebi.ac.uk/pdbe">PDB</a><br>
+                <a href="https://musicmaps.ai">MuSIC</a><br>
             </td>
             <td><a href="https://www.ebi.ac.uk/ols4/ontologies/mi/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FMI_0356" target="_blank">Identical object in an external resource</a></td>
             <td>Components in the Complex Portal complex and hu.MAP3.0 cluster or PDB/EMDB structure are identical. </td>
@@ -214,6 +215,25 @@ Cross-links to [ChEMBL](https://www.ebi.ac.uk/chembl/) are used to indicate comp
         </tr>
     </tbody>
 </table>
+
+### Links to External resources
+
+* <a href="https://humap3.proteincomplexes.org">Hu.MAP3.0</a> - Fischer, S.N., Claussen, E.R., Kourtis, S., Sdelci, S., Orchard, S., Hermjakob, H., Kustatscher, G., Drew, K., 2024. hu.MAP3.0: Atlas of human protein complexes by integration of &gt; 25,000 proteomic experiments. https://doi.org/10.1101/2024.10.11.617930
+
+
+* <a href="https://musicmaps.ai">MuSIC</a> - Qin, Y., Huttlin, E.L., Winsnes, C.F., Gosztyla, M.L., Wacheul, L., Kelly, M.R., Blue, S.M., Zheng, F., Chen, M., Schaffer, L.V., Licon, K., Bäckström, A., Vaites, L.P., Lee, J.J., Ouyang, W., Liu, S.N., Zhang, T., Silva, E., Park, J., Pitea, A., Kreisberg, J.F., Gygi, S.P., Ma, J., Harper, J.W., Yeo, G.W., Lafontaine, D.L.J., Lundberg, E., Ideker, T., 2021. A multi-scale map of cell structure fusing protein images and interactions. Nature 600, 536–542. https://doi.org/10.1038/s41586-021-04115-9
+
+
+* <a href="https://www.proteomehd.net">ProteomeHD</a> - Kustatscher, G., Grabowski, P., Schrader, T.A., Passmore, J.B., Schrader, M., Rappsilber, J., 2019. Co-regulation map of the human proteome enables identification of protein functions. Nat Biotechnol 37, 1361–1371. https://doi.org/10.1038/s41587-019-0298-5
+
+## Pairwise relationships
+
+Protein-protein data from multiple sources is displayed using gene names across the X and Y-axis in a heatmap. Below the heatmap is a correlation key ranging from 0-1, where 1 represents 100% co-expression between two proteins. Hover over the bricks of the heatmap for an exact score.
+
+### Sources
+
+* <a href="https://www.proteomehd.net">ProteomeHD</a> - Co-expression scores from ProteomeHD
+* <a href="https://www.ebi.ac.uk/intact">IntAct</a> - Interaction scores from IntAct
 
 ## Complex Variants
 
