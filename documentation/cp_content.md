@@ -263,8 +263,8 @@ Depending on your browser, you may have to right click on the link and choose "S
 
 <table><thead>
   <tr>
-    <th>For:</th>
-    <th>Then:</th>
+    <th>For</th>
+    <th>Then</th>
   </tr></thead>
 <tbody>
   <tr>
