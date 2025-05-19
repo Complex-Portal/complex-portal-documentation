@@ -288,7 +288,7 @@ Depending on your browser, you may have to right click on the link and choose "S
     <td>Create new complexes, add hu.MAP xref as 'subset' to all, put hu/MAP complex on-hold</td>
   </tr>
   <tr>
-    <td>If an existing complex will have update (components added/removed) that makes it a match <br>to a hu.MAP complex or hu.MAP becomes an subset</td>
+    <td>If an existing complex will have update (components added/removed) that makes it a match to a hu.MAP complex or hu.MAP becomes an subset</td>
     <td>Manually curated complex stays as master, create new version, add hu.MAP xref, put hu.MAP complex on-hold.</td>
   </tr>
   <tr>
