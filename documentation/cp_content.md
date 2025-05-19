@@ -258,3 +258,55 @@ Secondary IDs are available in all download files while the website currently on
 For trainined curators: here is the latest version of our [Complex Portal curation manual](https://raw.githubusercontent.com/Complex-Portal/complex-portal-documentation/master/assets/Manual_Complexes_curation.pdf).
 
 Depending on your browser, you may have to right click on the link and choose "Save Link As" to download the file.
+
+## Rules used to intergrate the predicted hu.MAP3.0 complexes
+
+<table><thead>
+  <tr>
+    <th>For</th>
+    <th>Then</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>A hu.MAP complex is an exact match to existing manually curated complex</td>
+    <td>Manually curated complex is master, add hu.MAP xref 'identity', put hu.MAP complex on-hold</td>
+  </tr>
+  <tr>
+    <td>A hu.MAP complex is subset of existing manually curated complex</td>
+    <td>Manually curated complex is master, add hu.MAP xref 'subset', put hu.MAP complex on-hold</td>
+  </tr>
+  <tr>
+    <td>A hu.MAP complex is an exact match to planned new manually curated complex</td>
+    <td>hu.MAP as master, ensure hu.MAP xref is retained as identitiy, ensure ECO is updated to releveant 3-5 star</td>
+  </tr>
+  <tr>
+    <td>A hu.MAP complex is a subset of 1 new planned manually curated complex</td>
+    <td>Start with hu.MAP as master, create new version, add hu.MAP xref as subset</td>
+  </tr>
+  <tr>
+    <td>A hu.MAP complex is a subset of &gt;1 new manually curated complex</td>
+    <td>Create new complexes, add hu.MAP xref as 'subset' to all, put hu/MAP complex on-hold</td>
+  </tr>
+  <tr>
+    <td>If an existing complex will have update (components added/removed) that makes it a match to a hu.MAP complex or hu.MAP becomes an subset</td>
+    <td>Manually curated complex stays as master, create new version, add hu.MAP xref, put hu.MAP complex on-hold.</td>
+  </tr>
+  <tr>
+    <td>Manually curated Complex A:B and Complex A:C but hu.Map cluster is of A:B:C</td>
+    <td>Add hu-MAP as xef to all curated entries, qualifier 'complex-cluster' and put hu.MAP entry on-hold.</td>
+  </tr>
+  <tr>
+    <td>PRO-chain IDs</td>
+    <td>Ignore, use the canonical form of the protein</td>
+  </tr>
+  <tr>
+    <td>Isoforms</td>
+    <td>Ignore, use the canonical form of the protein <br></td>
+  </tr>
+  <tr>
+    <td>hu.MAP partial matches that can be annotated as a curated complex in its own right</td>
+    <td>Claim ownership and annotate entry. These are partial matches from a first round mapping exercise, reviewed to be not a subset and have hu.MAP xref with an "identity" qualifier</td>
+  </tr>
+</tbody></table>
+
+
