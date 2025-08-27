@@ -259,7 +259,7 @@ For trainined curators: here is the latest version of our [Complex Portal curati
 
 Depending on your browser, you may have to right click on the link and choose "Save Link As" to download the file.
 
-## Rules used to intergrate the predicted hu.MAP3.0 complexes
+## Rules used to integrate the predicted hu.MAP3.0 complexes
 
 <table><thead>
   <tr>
