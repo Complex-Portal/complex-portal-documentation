@@ -310,3 +310,21 @@ Depending on your browser, you may have to right click on the link and choose "S
 </tbody></table>
 
 
+### Rapid Curation rules
+
+Minimum requirements for RAPID CURATION in ComplexPortal.
+
+Aim of rapid curation: speed-up the curation process for human and mouse entries
+
+Minimum requested fields (Mandatory):
+
+- List of interactors (UniprotAc)
+- Name
+- One reference (PMID)
+- A one-sentence description (strongly encouraged)
+- ANNOTATION: ‘rapid curation’
+- ECO code, complex type, interaction type, organism
+
+Desirable fields:
+- PDB or IntAct experimental evidence
+- Stoichiometry
